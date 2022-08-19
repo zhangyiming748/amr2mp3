@@ -1,4 +1,4 @@
-package amr
+package amr2mp3
 
 import (
 	"log"
@@ -7,7 +7,7 @@ import (
 )
 
 func ConvertMP3(src, dst string) {
-	cmd := exec.Command("/bin/bash", "amr/converter.sh", src, dst, "mp3")
+	cmd := exec.Command("/bin/bash", "converter.sh", src, dst, "mp3")
 	stdout, err := cmd.StdoutPipe()
 	cmd.Stderr = cmd.Stdout
 	if err != nil {

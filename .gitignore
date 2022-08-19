@@ -3,3 +3,4 @@
 *.amr
 *.log
 *DS_Store*
+vendor
